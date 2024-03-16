@@ -1,0 +1,121 @@
+header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  background-image: conic-gradient(
+    #553c9a 30%,
+    #ee4b2b 40%,
+    #ee4b2b 70%,
+    #00c2cb 80%,
+    #553c9a
+  );
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+#filters {
+  text-align: center;
+  button {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    padding: 12px 17px;
+    border-radius: 50px;
+    background-color: #2222220d;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover {
+      background-color: #2222221a;
+    }
+  }
+}
+
+#slider {
+  width: 90%;
+  height: 600px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px 3px grey;
+  position: relative;
+}
+
+div#slider {
+  overflow: hidden;
+  border: 5px solid #3949ab;
+}
+div#slider figure img {
+  width: 20%;
+  height: 100%;
+  float: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+div#slider figure img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  transition: 1s ease-in-out;
+}
+
+.btn-next,
+.btn-prev {
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  color: white;
+  background: #3949ab;
+  padding: 20px;
+  font-size: 50px;
+  border: none;
+}
+
+.btn-prev {
+  left: 0px;
+}
+.btn-next {
+  right: 0px;
+}
+
+#lightbox-container {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+#lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}

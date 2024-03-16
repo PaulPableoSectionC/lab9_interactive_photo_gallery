@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 9</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="lightbox.css" />
+    <script
+      src="https://kit.fontawesome.com/5d29a38529.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Photo Gallery</h1>
+    </header>
+    <main>
+      <div id="filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="architecture">
+          Architecture
+        </button>
+        <button class="filter-btn" data-category="city">City</button>
+      </div>
+      <div id="slider">
+        <figure>
+          <img
+            src="https://picsum.photos/id/210/400/600"
+            data-category="architecture"
+          />
+          <img
+            src="https://picsum.photos/id/233/400/600"
+            data-category="city"
+          />
+          <img
+            src="https://picsum.photos/id/235/400/600"
+            data-category="nature"
+          />
+          <img
+            src="https://picsum.photos/id/223/400/600"
+            data-category="city"
+          />
+          <img
+            src="https://picsum.photos/id/263/400/600"
+            data-category="architecture"
+          />
+          <img
+            src="https://picsum.photos/id/200/400/600"
+            data-category="city"
+          />
+          <img
+            src="https://picsum.photos/id/110/400/600"
+            data-category="nature"
+          />
+        </figure>
+        <button class="btn-prev">
+          <i class="fa fa-arrow-circle-left"></i>
+        </button>
+        <button class="btn-next">
+          <i class="fa fa-arrow-circle-right"></i>
+        </button>
+      </div>
+    </main>
+    <footer>© Paul Pableo</footer>
+    <div id="lightbox-container">
+      <span class="close-btn">&times;</span>
+      <img id="lightbox-image" src="" />
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
